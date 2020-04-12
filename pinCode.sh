@@ -1,8 +1,8 @@
 #!/bin/bash -x
 echo "---Pin code validation program---"
 
-#Constants /It wil not take any character or special symbol at end
-PINCODE_PATTERN="^[1-9]{1}[0-9]{5}$"
+#Constants and match patterns like 123 736.
+PINCODE_PATTERN="^[1-9]{1}[0-9]{2}\s?[0-9]{3}$"
 
 #Validate Pincode
 read -p "Enter PinCode : " pincode
